@@ -1,0 +1,186 @@
+body {
+    background-image: url(1.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+p{
+    text-align: left;
+   font-weight: 200;
+   font-size: 1.29em;
+    max-width: 60%;
+    padding-left: 2rem;
+
+    
+    
+}
+
+
+/* Media query for screens with max width of 767px (mobile devices) */
+@media (max-width: 767px) {
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+		padding-bottom: 2px;
+		float: none; /* Remove the float on mobile devices */
+		margin-right: 0; /* Remove the margin on mobile devices */
+	}
+	
+}
+@media (max-width :767px){
+    .gg{
+       
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+.sd{
+    font-family: 'Borel', cursive;
+}
+
+header{
+    
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: rgb(7, 0, 0);
+}
+
+.logo{
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: rgb(255, 14, 135);
+}
+nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    color: rgb(226, 239, 240);
+    align-items: center;
+    display: flex;
+    margin-inline: 10px;
+    
+
+
+
+
+
+}
+nav a img{
+    width: 25px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.main a{
+    text-decoration: none;
+    align-items: center; 
+
+  
+
+}
+*{font-family: 'poppins','sans serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 800px;
+  }
+  
+/* for mobile devices */
+@media (max-width: 767px) {
+    /* styles for mobile devices */
+  }
+  
+  /* for tablets */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* styles for tablets */
+  }
+  
+  /* for laptops/desktops */
+  @media (min-width: 992px) {
+    /* styles for laptops/desktops */
+  }
+/* for mobile devices */
+@media (max-width: 767px) {
+    /* styles for mobile devices */
+    img {
+      width: 100%;
+    }
+  }
+  
+  /* for tablets */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* styles for tablets */
+    img {
+      width: 50%;
+    }
+  }
+  
+  
+  
+  /* For screens 768px and smaller (mobile) */
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar-brand {
+      margin-bottom: 1rem;
+    }
+    .navbar-nav {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    .nav-item {
+      margin-bottom: 0.5rem;
+    }
+    .collapse.navbar-collapse.show {
+      display: block;
+    }
+   
+      
+  }
+
+
+/* Default styles for the logo element */
+.logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 767px) {
+    /* Apply this style to the logo element */
+    .logo {
+      float: left;
+      clear: both;
+      margin-left: -100px;
+      margin-bottom: 0rem; /* Optional: add some spacing below the logo */
+
+    }
+  }
+  
+
