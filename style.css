@@ -37,7 +37,9 @@ p{
 .sd{
     font-family: 'Borel', cursive;
 }
-
+.gg{
+    visibility: hidden;
+}
 header{
     
     width: 100%;
