@@ -21,6 +21,9 @@ img {
     max-width: 15%;
     height: auto;
     display: block;
+    width: 200px;
+    height: 400px;
+    object-fit: cover;
     
     padding-left: 5px;
     float: left; /* Float the images to the left */
@@ -168,5 +171,64 @@ nav a img{
 
     }
   }
+
+  /* Default styles for the images */
+video {
+    max-width: 240px;
+    height: auto;
+    display: block;
+    
+    
+    padding-left: 5px;
+    float: left; /* Float the images to the left */
+  margin-right: 20px; /* Add space between the images */
+ }
+    
+
   
 
+  
+  
+  
+  /* Media query for screens with max width of 767px (mobile devices) */
+  @media (max-width: 767px) {
+    video {
+      max-width: 50%; /* Reduce the width of images */
+      margin: 0 auto; /* Center the images horizontally */
+      padding-bottom: 5px;
+      float: none; /* Remove the float on mobile devices */
+    }
+  }
+  
+
+  .video-container {
+    position: relative;
+  }
+  
+  .play-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url('play-icon.png');
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .play-button {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .play-button {
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      transform: none;
+    }
+  }
+  
